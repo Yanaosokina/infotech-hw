@@ -1,8 +1,9 @@
 import React from "react";
-import "./firstsection.css";
 import Button from "../Button/Button.tsx";
 
-export default function FirstSection() {
+import "./IntroductionSection.css";
+
+export default function IntroductionSection() {
   const handleClick = () => {
     console.log('Клик по кнопке "Go to shopping"');
   };

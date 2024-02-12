@@ -1,30 +1,37 @@
 :root {
-  --primary-color: #484283;
-  --secondary-color: #dbbba9;
-  --accent-color: #ff7f50;
+  --purple-background-color: #484283;
+  --main-color: #444b58;
+  --text-fair-color: white;
+  --border-radius: 4px;
 }
 
 body {
   margin: 0;
   font-family: "Jost";
   background-color: #e5e5e5;
-  color: #444b58;
+  color: var(--main-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
 h1 {
   font-size: 36px;
   font-weight: 400;
-  color: white;
+  line-height: 140%;
+  color: var(--text-fair-color);
+  @media (max-width: 500px) {
+    font-size: 25px;
+  }
 }
 
 h2 {
   font-size: 30px;
   font-weight: 700;
-  color: #444B58;
+  color: var(--main-color);
 }
 
 h3 {
@@ -37,8 +44,9 @@ h4 {
 
 p {
   font-size: 16px;
-  font-weight: 700;
-  color: white;
+  font-weight: 600;
+  line-height: 140%;
+  color: var(--text-fair-color);
   margin: 0;
 }
 
@@ -46,4 +54,14 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input {
+  width: 24px;
+  height: 24px;
 }

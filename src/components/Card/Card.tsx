@@ -1,5 +1,7 @@
 import React from "react";
-import './card.css';
+
+import './Card.css';
+
 type CardProps = {
   image: any;
   modelName: string;

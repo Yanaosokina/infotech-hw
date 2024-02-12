@@ -1,6 +1,8 @@
 import React from "react";
-import "./cards.css";
 import Card from "../Card/Card.tsx";
+
+import "./Сards.css";
+
 
 type Product = {
   image: string;

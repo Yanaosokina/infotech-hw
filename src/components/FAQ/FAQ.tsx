@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./faq.css";
 import CloseFAQ from "../../assets/icons/x.svg";
 import OpenFAQ from "../../assets/icons/plus.svg";
+
+import "./FAQ.css";
 
 export default function FAQ() {
   const [openedQuestion, setOpenedQuestion] = useState(null);

@@ -1,16 +1,18 @@
 .catalog {
-  padding: 55px 130px 51px;
+  padding: 55px 0;
   background: white;
-
-  @media (max-width: 1250px) {
-    padding: 50px 50px;
-  }
-  @media (max-width: 450px) {
-    padding: 30px 30px;
-  }
 }
 
 .catalog__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+
+  @media (max-width: 1200px) {
+    max-width: 90%;
+  }
+}
+
+.catalog__content {
   display: flex;
   gap: 20px;
   margin-top: 30px;

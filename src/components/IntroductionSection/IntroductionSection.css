@@ -1,18 +1,16 @@
 .introduction {
-  padding: 87px 115px 92px 130px;
-  background-color: var(--primary-color);
+  padding: 87px 0 92px;
+  background-color: var(--purple-background-color);
   height: 100%;
 
-  @media (max-width: 1250px) {
-    padding: 80px 50px;
-  }
-  @media (max-width: 450px) {
-    padding: 50px 30px;
+  @media (max-width: 500px) { 
+    padding: 20px 0;
   }
 }
 
 .introduction__wrapper {
-  margin-left: 3px;
+  max-width: 1180px;
+  margin: 0 auto;
   position: relative;
 
   background-image: url("../../assets/icons/GoodForYou.svg");
@@ -20,27 +18,26 @@
   background-position: 38px 93px;
   background-size: 90%;
 
-  @media (max-width: 1250px) {
+  @media (max-width: 1200px) {
+    max-width: 90%;
     background-position: center;
     background-size: 100%;
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     align-items: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 
 .introduction__tittle {
-  @media (max-width: 450px) {
-    font-size: 25px;
-  }
+  margin-left: 3px;
 }
 
 .introduction__text {
-  margin-top: 15px;
-  margin-bottom: 40px;
+  margin: 20px 0 40px 3px;
 }
 
 .introduction__button {

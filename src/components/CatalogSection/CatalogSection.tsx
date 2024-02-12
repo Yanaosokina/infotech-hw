@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import "./catalog-section.css";
 import Filter from "../Filter/Filter.tsx";
 import Cards from "../Cards/Cards.tsx";
-import Nike from "../../assets/images/Nike.png";
 import Button from "../Button/Button.tsx";
 
+import Nike from "../../assets/images/Nike.png";
+
+import "./CatalogSection.css";
+
 export default function CatalogSection() {
-  const [visibleProducts, setVisibleProducts] = useState(9); // Состояние для хранения количества видимых продуктов
+  const [visibleProducts, setVisibleProducts] = useState(9);
   let products = [
     {
       image: Nike,
@@ -65,21 +67,22 @@ export default function CatalogSection() {
   };
   return (
     <section className="catalog">
-      <h2>Catalog</h2>
       <div className="catalog__wrapper">
-        <Filter />
-        <div className="catalog__cards">
-          <Cards visibleProducts={visibleProducts} products={products} />
-        {visibleProducts < products.length && (
-          <Button
-            type="primary"
-            className="catalog__button"
-            onClick={showMoreProducts}
-            text="Show more"
-          />
-        )}
+        <h2>Catalog</h2>
+        <div className="catalog__content">
+          <Filter />
+          <div className="catalog__cards">
+            <Cards visibleProducts={visibleProducts} products={products} />
+            {visibleProducts < products.length && (
+              <Button
+                type="primary"
+                className="catalog__button"
+                onClick={showMoreProducts}
+                text="Show more"
+              />
+            )}
+          </div>
         </div>
-        
       </div>
     </section>
   );

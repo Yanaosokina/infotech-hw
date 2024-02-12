@@ -1,20 +1,26 @@
 .button {
   background-color: transparent;
-  border-radius: 4px;
-  color: #444b58;
+  border-radius: var(--border-radius);
+  color: var(--main-color);
   border: none;
   cursor: pointer;
   height: 67px;
   font-size: 16px;
   padding: 0 47px;
   line-height: 23px;
+
+  @media (max-width: 500px) {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 13px;
+  }
 }
 .primaryButton {
   background-color: #f14f4f;
-  color: white;
+  color: var(--text-fair-color);
 }
 
 .secondaryButton {
-  background-color: #444b58;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--text-fair-color);
 }

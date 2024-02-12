@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "../Button/Button.tsx";
-import './filter.css';
+
+import "./Filter.css";
 
 export default function Filter() {
   const [filter, setFilter] = useState("");
@@ -17,22 +18,47 @@ export default function Filter() {
     setFilter("");
   };
 
+  const filters = [
+    "smartphones",
+    "laptops",
+    "sneakers",
+    "sneakers",
+    "sneakers",
+    "sneakers",
+    "sneakers",
+    "sneakers",
+  ];
+
   return (
     <aside className="filter">
-      <h3 className="filter__title">Selection <br /> by parameters</h3>
+      <h3>
+        Selection <br /> by parameters
+      </h3>
       <div>
         <p className="filter__text">Category</p>
         <div className="filter__options">
-          <div className="filter__option" onClick={() => addFilter("смартфоны, ")}>smartphones</div>
-          <div className="filter__option" onClick={() => addFilter("ноутбуки, ")}>laptops</div>
-          <div className="filter__option" onClick={() => addFilter("Обувь, ")}>sneakers</div>
-          <div className="filter__option" onClick={() => addFilter("Обувь, ")}>sneakers</div>
-          <div className="filter__option" onClick={() => addFilter("Обувь, ")}>sneakers</div>
-          <div className="filter__option" onClick={() => addFilter("Обувь, ")}>sneakers</div>
+          {filters.map((filterText, index) => (
+            <div
+              key={index}
+              className="filter__option"
+              onClick={() => addFilter(`${filterText}, `)}
+            >
+              {filterText}
+            </div>
+          ))}
         </div>
         <div className="filter__buttons">
-          <Button text="Apply" type="secondary" onClick={searchProducts} className="filter__btn" />
-          <Button text="Reset" onClick={resetFilter} className="filter__btn_reset"/>
+          <Button
+            text="Apply"
+            type="secondary"
+            onClick={searchProducts}
+            className="filter__btn"
+          />
+          <Button
+            text="Reset"
+            onClick={resetFilter}
+            className="filter__btn_reset"
+          />
         </div>
       </div>
     </aside>

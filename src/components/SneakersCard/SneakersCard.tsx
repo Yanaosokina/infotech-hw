@@ -16,7 +16,7 @@ export default function SneakersCard({ image, title }) {
           checked={checked}
           onChange={handleCheckboxChange}
         />
-        <label >{title}</label>
+        <label>{title}</label>
       </div>
     </div>
   );

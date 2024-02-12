@@ -1,12 +1,15 @@
 import React from "react";
 import NavBlock from "../NavBlock/NavBlock.tsx";
-import "./footer.css";
+import "./Footer.css";
 
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="footer__logo">Goods4you</div>
+      <div className="footer__wrapper">
+        <div className="footer__logo">Goods4you</div>
       <NavBlock isHeader={false} />
+      </div>
+      
     </footer>
   );
 }

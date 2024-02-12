@@ -1,7 +1,8 @@
 import React from "react";
 import Sneakers from "../../assets/images/sneakers.png";
 import SneakersCard from "../SneakersCard/SneakersCard.tsx";
-import './slectSneackers.css';
+
+import './SlectSneackers.css';
 
 export default function SelectSneackers() {
   const cardsData = [

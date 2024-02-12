@@ -4,9 +4,9 @@
   gap: 10px;
   width: 280px;
 
-  @media (max-width: 1180px) {
+  @media (max-width: 1000px) {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     grid-auto-rows: auto;
     gap: 10px;
   }
@@ -19,15 +19,7 @@
 }
 
 .sneakersCard__checkbox input {
-  width: 24px;
-  height: 24px;
-
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   margin: 0 4px 0 0;
 }
 
-
-.sneakersCard__checkbox label {
-  font-size: 16px;
-  font-weight: 600;
-}

@@ -8,8 +8,8 @@ type NavBlockProps = {
 
 export default function NavBlock({ isHeader }: NavBlockProps) {
   return (
-    <div className="info">
-      <nav className="nav">
+    <div className="navBlock">
+      <nav className="navBlock__nav">
         <a href="#">Catalog</a>
         <a href="#">About us</a>
         <a href="">Product selection</a>
@@ -17,11 +17,11 @@ export default function NavBlock({ isHeader }: NavBlockProps) {
         <a href="">Shipping and payment</a>
         <a href="">Contacts</a>
       </nav>
-      {isHeader && <div className="header__burger">Burger</div>}
+      {isHeader && <div className="navBlock__burger">Burger Menu</div>}
 
       {isHeader && (
-        <div className="header__cart">
-          <a href="#" className="header__cart_link">
+        <div className="navBlock__cart">
+          <a href="#" aria-label="Go to Cart" className="navBlock__cart_link">
             Cart
             <img src={Cart} alt="cart" />
           </a>

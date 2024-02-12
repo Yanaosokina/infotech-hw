@@ -23,7 +23,7 @@ export default function Button({
   }`;
 
   return (
-    <button onClick={onClick} className={`${buttonClass} ${className}`}>
+    <button onClick={onClick} className={`${buttonClass} ${className}`} aria-label={text}>
       {text}
     </button>
   );

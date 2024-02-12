@@ -1,6 +1,6 @@
 import React from "react";
 import AbouUsImg from "../../assets/images/AboutUsImg.png";
-import "./aboutUsSection.css";
+import "./AboutUsSection.css";
 
 export default function AboutUsSection() {
   return (
