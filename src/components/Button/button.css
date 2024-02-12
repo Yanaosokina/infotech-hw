@@ -1,0 +1,20 @@
+.button {
+  background-color: transparent;
+  border-radius: 4px;
+  color: #444b58;
+  border: none;
+  cursor: pointer;
+  height: 67px;
+  font-size: 16px;
+  padding: 0 47px;
+  line-height: 23px;
+}
+.primaryButton {
+  background-color: #f14f4f;
+  color: white;
+}
+
+.secondaryButton {
+  background-color: #444b58;
+  color: white;
+}

@@ -1,0 +1,48 @@
+.introduction {
+  padding: 87px 115px 92px 130px;
+  background-color: var(--primary-color);
+  height: 100%;
+
+  @media (max-width: 1250px) {
+    padding: 80px 50px;
+  }
+  @media (max-width: 450px) {
+    padding: 50px 30px;
+  }
+}
+
+.introduction__wrapper {
+  margin-left: 3px;
+  position: relative;
+
+  background-image: url("../../assets/icons/GoodForYou.svg");
+  background-repeat: no-repeat;
+  background-position: 38px 93px;
+  background-size: 90%;
+
+  @media (max-width: 1250px) {
+    background-position: center;
+    background-size: 100%;
+  }
+
+  @media (max-width: 450px) {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.introduction__tittle {
+  @media (max-width: 450px) {
+    font-size: 25px;
+  }
+}
+
+.introduction__text {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.introduction__button {
+  margin-left: 15px;
+}
