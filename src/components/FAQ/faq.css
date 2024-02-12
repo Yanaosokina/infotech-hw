@@ -36,6 +36,10 @@
   }
 }
 
+.faq__question:last-child .faq__header{
+  border-bottom: 1px solid #242424;
+}
+
 .faq__question {
   margin-bottom: 37px;
 }

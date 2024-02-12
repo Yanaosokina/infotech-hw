@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 
-import NavBlock from "../NavBlock/NavBlock.tsx";
+import NavBlock from "../NavBlock/NavBlock";
 
 export default function Header() {
   return (

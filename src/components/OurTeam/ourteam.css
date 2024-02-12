@@ -11,13 +11,17 @@
   right: 0;
   width: 301px;
   height: 550px;
+}
 
-  @media (max-width: 1000px) {
+@media (max-width: 1000px) {
+  .ourteam::before {
     width: 200px;
     height: auto;
   }
+}
 
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
+  .ourteam::before {
     display: none;
   }
 }

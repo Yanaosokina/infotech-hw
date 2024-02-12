@@ -1,7 +1,7 @@
 import React from "react";
 import "./SelectSection.css";
-import SelectSneackers from "../SelectSneakers/SelectSneackers.tsx";
-import Button from '../Button/Button.tsx';
+import SelectSneackers from "../SelectSneakers/SelectSneackers";
+import Button from "../Button/Button";
 
 export default function SelectSection() {
   return (
@@ -23,7 +23,7 @@ export default function SelectSection() {
             <p className="select__footer_pages">
                 1 of 3
             </p>
-            <Button  text="Next step" className="select__btn" onClick={() => console.log('Клик по кнопке "Next step"')}/>
+            <Button type='tertiary' text="Next step"  onClick={() => console.log('Клик по кнопке "Next step"')}/>
           </div>
         </div>
       </div>

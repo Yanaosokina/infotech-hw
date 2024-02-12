@@ -1,5 +1,5 @@
 import React from "react";
-import NavBlock from "../NavBlock/NavBlock.tsx";
+import NavBlock from "../NavBlock/NavBlock";
 import "./Footer.css";
 
 export default function Footer() {

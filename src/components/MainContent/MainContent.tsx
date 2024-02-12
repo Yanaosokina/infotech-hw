@@ -1,10 +1,10 @@
 import React from "react";
-import IntroductionSection from "../IntroductionSection/IntroductionSection.tsx";
-import CatalogSection from "../CatalogSection/CatalogSection.tsx";
-import AboutUsSection from "../AboutUsSection/AboutUsSection.tsx";
-import SelectSection from "../SelectSection/SelectSection.tsx";
-import OurTeam from "../OurTeam/OurTeam.tsx";
-import FAQ from "../FAQ/FAQ.tsx";
+import IntroductionSection from "../IntroductionSection/IntroductionSection";
+import CatalogSection from "../CatalogSection/CatalogSection";
+import AboutUsSection from "../AboutUsSection/AboutUsSection";
+import SelectSection from "../SelectSection/SelectSection";
+import OurTeam from "../OurTeam/OurTeam";
+import FAQ from "../FAQ/FAQ";
 
 export default function MainContent() {
   return (

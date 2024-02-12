@@ -58,16 +58,7 @@
 
 .select__footer {
   display: flex;
-  margin-top: 60px;
+  margin-top: 58px;
   align-items: center;
   justify-content: space-between;
-}
-
-.select__btn {
-  height: 50px;
-  width: 148px;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 0px 20px;
-  border: 1px solid var(--main-color);
 }

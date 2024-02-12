@@ -10,7 +10,7 @@
 }
 
 .footer__wrapper {
-  width: 1180px;
+  max-width: 1180px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

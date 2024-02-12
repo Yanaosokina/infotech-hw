@@ -1,9 +1,10 @@
 import React from "react";
+import { classNames  } from "../../utils/class-names";
 import "./button.css";
 
 type ButtonProps = {
   text: string;
-  type?: "primary" | "secondary";
+  type?: "primary" | "secondary" | 'text' | 'tertiary';
   className?: string;
   onClick: () => void;
 };
@@ -11,19 +12,21 @@ type ButtonProps = {
 export default function Button({
   text,
   type,
-  className = "",
+  className: propClassName = "",
   onClick,
 }: ButtonProps) {
-  const buttonClass = `button ${
-    type === "primary"
-      ? "primaryButton"
-      : type === "secondary"
-      ? "secondaryButton"
-      : ""
-  }`;
+
+  const className = classNames({
+    button: true,
+    button__primary: type === 'primary',
+    button__secondary: type === 'secondary',
+    button__tertiary: type === 'tertiary',
+    button__text: type === 'text',
+    [propClassName]: !!propClassName
+  })
 
   return (
-    <button onClick={onClick} className={`${buttonClass} ${className}`} aria-label={text}>
+    <button onClick={onClick} className={className} aria-label={text}>
       {text}
     </button>
   );

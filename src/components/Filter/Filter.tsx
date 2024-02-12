@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Button from "../Button/Button.tsx";
+import Button from "../Button/Button";
 
 import "./Filter.css";
 
-export default function Filter() {
+export function Filter() {
   const [filter, setFilter] = useState("");
 
-  const addFilter = (filterToAdd) => {
+  const addFilter = (filterToAdd: string) => {
     setFilter((prevFilter) => prevFilter + filterToAdd);
   };
 
@@ -56,6 +56,7 @@ export default function Filter() {
           />
           <Button
             text="Reset"
+            type='text'
             onClick={resetFilter}
             className="filter__btn_reset"
           />

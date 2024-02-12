@@ -1,23 +1,18 @@
 import React, { useState } from "react";
+import { Checkbox } from "components/Checkbox";
 import "./SneakersCard.css";
 
-export default function SneakersCard({ image, title }) {
-  const [checked, setChecked] = useState(false);
 
-  const handleCheckboxChange = () => {
-    setChecked(!checked);
-  };
+type SneakersCardProps = {
+  image: any,
+  title: string
+}
+
+export default function SneakersCard({ image, title }: SneakersCardProps) {
   return (
     <div className="sneakersCard">
       <img src={image} alt={title} />
-      <div className="sneakersCard__checkbox">
-        <input
-          type="checkbox"
-          checked={checked}
-          onChange={handleCheckboxChange}
-        />
-        <label>{title}</label>
-      </div>
+      <Checkbox>{title}</Checkbox>
     </div>
   );
 }

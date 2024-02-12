@@ -12,7 +12,7 @@ export default function FAQ() {
     { title: "Question 2", text: "Long answer to the second question" },
   ];
 
-  const toggleQuestion = (index) => {
+  const toggleQuestion = (index: any) => {
     setOpenedQuestion(openedQuestion === index ? null : index);
   };
 

@@ -20,14 +20,13 @@
 .navBlock__burger {
   display: none;
   margin-right: 25px;
-  
+
   @media (max-width: 1090px) {
     display: block;
   }
-
 }
 
-.navBlock__car {
+.navBlock__cart {
   margin-left: 55px;
 }
 
@@ -40,13 +39,41 @@
   color: white;
   font-weight: 600;
   border: none;
-  
+
   @media (max-width: 1090px) {
     gap: 10px;
   }
 }
 
-.navBlock__cart a::before {
+.navBlock__cart_icon {
+  position: relative;
+  left: 15px;
+}
+
+.navBlock__cart_icon::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #f14f4f;
+  right: -7px;
+  top: 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.navBlock__cart_text {
+  position: absolute;
+  font-size: 12px;
+  top: 8px;
+  right: -2px;
+
+}
+
+/* .navBlock__cart a::before {
   content: "1";
   position: absolute;
   display: block;
@@ -59,4 +86,4 @@
   text-align: center;
   font-size: 12px;
   font-weight: 600;
-}
+} */

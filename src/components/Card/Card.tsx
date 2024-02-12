@@ -14,7 +14,7 @@ export default function Card({ image, modelName, price }: CardProps) {
       <img src={image} alt={modelName} className="card__image" />
       <div className="card__details">
         <p className="card__modelName">{modelName}</p>
-        <p className="card__price">{price}$</p>
+        <p className="card__price">{price} <span className="card__price_dollar">$</span></p>
       </div>
     </div>
   );

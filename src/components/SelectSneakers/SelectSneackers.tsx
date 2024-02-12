@@ -1,6 +1,6 @@
 import React from "react";
 import Sneakers from "../../assets/images/sneakers.png";
-import SneakersCard from "../SneakersCard/SneakersCard.tsx";
+import SneakersCard from "../SneakersCard/SneakersCard";
 
 import './SlectSneackers.css';
 

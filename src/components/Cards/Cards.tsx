@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "../Card/Card.tsx";
+import Card from "../Card/Card";
 
 import "./Сards.css";
 

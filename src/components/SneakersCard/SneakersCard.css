@@ -17,9 +17,32 @@
   align-items: center;
   gap: 5px;
 }
-
-.sneakersCard__checkbox input {
+.sneakersCard__checkbox_input {
   border-radius: var(--border-radius);
-  margin: 0 4px 0 0;
+  opacity: 0;
+  display: inline-block;
+  position: relative;
 }
 
+input[type="checkbox" i] {
+  border-radius: var(--border-radius);
+  width: 24px;
+  height: 24px;
+  margin: 0 4px 0 0;
+  position: relative;
+}
+
+.sneakersCard__checkbox_input::before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0 4px 0 0;
+  background: url('../../assets/icons/plus.svg') no-repeat center center;
+  background-size: 100% auto;
+  border-radius: 5px;
+  pointer-events: none; 
+}

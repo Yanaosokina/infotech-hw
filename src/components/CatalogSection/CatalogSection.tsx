@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Filter from "../Filter/Filter.tsx";
-import Cards from "../Cards/Cards.tsx";
-import Button from "../Button/Button.tsx";
+import {Filter} from "components/Filter";
+import Cards from "../Cards/Cards";
+import Button from "../Button/Button";
 
 import Nike from "../../assets/images/Nike.png";
 
@@ -18,47 +18,47 @@ export default function CatalogSection() {
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
     {
       image: Nike,
       modelName: "Nike Air Force 1 '07 QS",
-      price: 100,
+      price: 110,
     },
   ];
 
