@@ -1,8 +1,8 @@
 import React from "react";
-import NavBlock from "../NavBlock/NavBlock";
+import { NavBlock } from "shared-components/NavBlock";
 import "./Footer.css";
 
-export default function Footer() {
+export  function Footer() {
   return (
     <footer className="footer">
       <div className="footer__wrapper">

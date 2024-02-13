@@ -1,0 +1,1 @@
+export { SneakersCard } from './SneakersCard';

@@ -1,12 +1,11 @@
-import React from "react";
-import IntroductionSection from "../IntroductionSection/IntroductionSection";
-import CatalogSection from "../CatalogSection/CatalogSection";
-import AboutUsSection from "../AboutUsSection/AboutUsSection";
-import SelectSection from "../SelectSection/SelectSection";
-import OurTeam from "../OurTeam/OurTeam";
-import FAQ from "../FAQ/FAQ";
+import { IntroductionSection } from "components/MainContent/IntroductionSection/IntroductionSection";
+import { CatalogSection } from "components/MainContent/CatalogSection";
+import { AboutUsSection } from "components/MainContent/AboutUsSection/AboutUsSection";
+import { SelectSection } from "components/MainContent/SelectSection";
+import { OurTeam } from "components/MainContent/OurTeam/OurTeam";
+import { FAQ } from "./FAQ";
 
-export default function MainContent() {
+export  function MainContent() {
   return (
     <main>
       <IntroductionSection />

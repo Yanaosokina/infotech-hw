@@ -1,9 +1,9 @@
 import React from "react";
 import "./header.css";
 
-import NavBlock from "../NavBlock/NavBlock";
+import { NavBlock } from "shared-components/NavBlock";
 
-export default function Header() {
+export  function Header() {
   return (
     <header className="header">
       <div className="header__block">

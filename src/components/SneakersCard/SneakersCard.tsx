@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import { Checkbox } from "components/Checkbox";
+import { Checkbox } from "shared-components/Checkbox";
 import "./SneakersCard.css";
 
 
 type SneakersCardProps = {
-  image: any,
+  image: string,
   title: string
 }
 
-export default function SneakersCard({ image, title }: SneakersCardProps) {
+export function SneakersCard({ image, title }: SneakersCardProps) {
   return (
-    <div className="sneakersCard">
+    <div className="sneakers-card">
       <img src={image} alt={title} />
       <Checkbox>{title}</Checkbox>
     </div>

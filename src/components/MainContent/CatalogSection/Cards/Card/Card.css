@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: calc(50% - 10px);
+  }
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__details {
+  padding-top: 10px;
+}
+
+.card__modelName {
+  margin-bottom: 5px;
+  color: var(--main-color);
+  font-weight: 600;
+}
+
+.card__price {
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+  .card__modelName, .card__price {
+    font-size: 13px;
+  }
+}
