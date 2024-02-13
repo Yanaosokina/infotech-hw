@@ -1,5 +1,5 @@
 import { NavBlock } from "shared-components/NavBlock";
-import "./Footer.css";
+import "./footer.css";
 
 export  function Footer() {
   return (
