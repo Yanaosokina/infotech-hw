@@ -1,4 +1,3 @@
-import React from "react";
 import "./header.css";
 
 import { NavBlock } from "shared-components/NavBlock";

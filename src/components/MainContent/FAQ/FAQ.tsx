@@ -33,16 +33,10 @@ function FAQItem({ title, text }: FAQItemProps) {
 }
 
 export function FAQ() {
-  const [openedQuestion, setOpenedQuestion] = useState(null);
-
   const questions = [
     { title: "Question 1", text: "Long answer to the first question" },
     { title: "Question 2", text: "Long answer to the second question" },
   ];
-
-  const toggleQuestion = (index: any) => {
-    setOpenedQuestion(openedQuestion === index ? null : index);
-  };
 
   return (
     <section className="faq">

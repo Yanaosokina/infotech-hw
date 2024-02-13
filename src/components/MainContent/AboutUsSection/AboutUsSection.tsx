@@ -1,5 +1,5 @@
 import AbouUsImg from "assets/images/AboutUsImg.png";
-import AboutUsImgSmall from "assets/images/AboutUsImgSmall.webp";
+import AboutUsImgWebP from "assets/images/AboutUsImgSmall.webp";
 import "./AboutUsSection.css";
 
 export function AboutUsSection() {
@@ -16,9 +16,8 @@ export function AboutUsSection() {
           <h4 className="about__logo">Goods4you</h4>
           <picture>
             <source
-              srcSet={AboutUsImgSmall}
+              srcSet={AboutUsImgWebP}
               type="image/webp"
-              className="about__image"
             />
             <img src={AbouUsImg} alt="img" className="about__image" />
           </picture>

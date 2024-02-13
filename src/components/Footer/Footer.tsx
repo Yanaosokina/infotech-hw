@@ -1,4 +1,3 @@
-import React from "react";
 import { NavBlock } from "shared-components/NavBlock";
 import "./Footer.css";
 
@@ -9,7 +8,6 @@ export  function Footer() {
         <div className="footer__logo">Goods4you</div>
       <NavBlock isHeader={false} />
       </div>
-      
     </footer>
   );
 }

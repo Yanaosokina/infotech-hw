@@ -1,8 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, ReactNode } from "react";
 
 type CollapseProps = {
   isOpened?: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export function Collapse({ isOpened, children }: CollapseProps) {
@@ -10,7 +10,6 @@ export function Collapse({ isOpened, children }: CollapseProps) {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log(ref.current?.scrollHeight);
     if (isOpened) {
       setHeight(ref.current?.scrollHeight || 0);
     } else {

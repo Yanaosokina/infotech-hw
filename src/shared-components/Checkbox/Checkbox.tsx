@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState, ReactNode } from "react";
 import { classNames } from "utils/class-names";
 import "./checkbox.css";
 
 type CheckboxProps = {
-  children: React.ReactNode;
+  children: ReactNode;
   onChange?: (value: boolean) => void;
 };
 

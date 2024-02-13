@@ -40,7 +40,7 @@
   gap: 15px;
 }
 
-.ourteam__person img:hover {
+.ourteam__person:hover img {
   filter: brightness(70%);
 }
 
@@ -58,7 +58,7 @@
   display: none;
 }
 
-.ourteam__person img:hover + .person__details {
+.ourteam__person:hover .person__details {
   display: flex;
   align-items: center;
   justify-content: center;
