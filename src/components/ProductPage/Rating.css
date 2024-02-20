@@ -1,0 +1,17 @@
+.raiting {
+    display: flex;
+}
+.raiting__star {
+  color: #f14f4f;
+}
+
+.raiting__star_decimal {
+  position: relative;
+  color: #f14f4f;
+}
+
+.raiting__star_half {
+  position: absolute;
+  overflow: hidden;
+  color: #f14f4f;
+}

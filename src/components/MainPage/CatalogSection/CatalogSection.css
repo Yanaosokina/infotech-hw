@@ -1,0 +1,28 @@
+.catalog {
+  padding: 55px 0 22px;
+  background: white;
+}
+
+.catalog__wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .catalog__wrapper {
+    padding: 0 20px;
+  }
+}
+
+.catalog__content {
+  display: flex;
+  gap: 20px;
+  margin: 30px auto;
+}
+
+
+@media (max-width: 800px) {
+  .catalog__content {
+    flex-direction: column;
+  }
+}

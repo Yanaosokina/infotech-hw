@@ -1,0 +1,19 @@
+.sneakers-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 280px;
+}
+
+
+@media (max-width: 800px) {
+  .sneakers-card {
+    width: calc(50% - 10px)
+  }
+}
+
+@media (max-width: 600px) {
+  .sneakers-card {
+    width: 100%;
+  }
+}

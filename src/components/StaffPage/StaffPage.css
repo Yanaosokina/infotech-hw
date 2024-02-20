@@ -1,0 +1,10 @@
+.staff-page__wrapper {
+  max-width: 1180px;
+  margin: 55px auto;
+}
+
+@media (max-width: 1200px) {
+  .staff-page__wrapper {
+    width: calc(100% - 20px);
+  }
+}

@@ -12,14 +12,9 @@
   align-items: center;
   max-width: 1180px;
   margin: 0 auto;
-
-  @media (max-width: 1230px) {
-    max-width: 90%;
-  }
-
 }
 
-.header__block::before {
+.header_mainPage .header__block::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -32,9 +27,16 @@
 .header__block .header__logo {
   font-weight: 700;
   font-size: 30px;
-
-  @media (max-width: 500px) {
-    font-size: 20px;
-   }
 }
 
+@media (max-width: 1230px) {
+  .header__block {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__block .header__logo {
+    font-size: 20px;
+  }
+}

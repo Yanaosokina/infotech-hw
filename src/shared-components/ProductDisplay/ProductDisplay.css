@@ -1,0 +1,11 @@
+.catalog__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.catalog__button {
+  width: 171px;
+  font-size: 15px;
+}

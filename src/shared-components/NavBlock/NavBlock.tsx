@@ -1,33 +1,32 @@
-import Cart from "assets/icons/Cart.svg";
-import './NavBlock.css';
+import { Link, useLocation } from "react-router-dom";
+import { matchPath } from "react-router";
+
+import "./NavBlock.css";
 
 type NavBlockProps = {
   isHeader: boolean;
 };
 
-export  function NavBlock({ isHeader }: NavBlockProps) {
+export function NavBlock({ isHeader }: NavBlockProps) {
+  const location = useLocation();
+  const isMainPage = matchPath(location.pathname, "/") !== null;
+  
   return (
     <div className="nav-block">
-      <nav className="nav-block__nav">
-        <a href="#">Catalog</a>
-        <a href="#">About us</a>
-        <a href="#">Product selection</a>
-        <a href="#">Our team</a>
-        <a href="#">Shipping and payment</a>
-        <a href="#">Contacts</a>
-      </nav>
-      {isHeader && <div className="nav-block__burger">Burger</div>}
-      {isHeader && (
-        <div className="nav-block__cart">
-          <a href="#" aria-label="Go to Cart" className="nav-block__cart_link">
-            Cart
-            <div className="nav-block__cart_icon">
-              <img src={Cart} alt="cart" />
-              <span className="nav-block__cart_text">1</span>
-            </div>
-          </a>
-        </div>
+      {isMainPage && (
+        <nav className="nav-block__nav">
+          <a href="#catalog">Catalog</a>
+          <a href="#about">About us</a>
+          <a href="#products">Product selection</a>
+          <a href="#team"> Our team</a>
+          <a href="#faq">FAQ</a>
+          {isHeader && <Link to="/staff" className="nav-block__staff">For staff</Link>}
+        </nav>
       )}
+      {isHeader && isMainPage && (
+        <div className="nav-block__burger">Burger</div>
+      )}
+      {!isMainPage && <Link to="/">Back to site</Link>}
     </div>
   );
 }
