@@ -32,6 +32,7 @@ export function StaffPage() {
     [setSearchTerm, setSkip]
   );
 
+
   return (
     <section className="staff-page">
       <div className="staff-page__wrapper">

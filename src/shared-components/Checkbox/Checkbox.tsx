@@ -5,6 +5,8 @@ import "./checkbox.css";
 type CheckboxProps = {
   children: ReactNode;
   onChange?: (value: boolean) => void;
+  isChecked?: boolean
+  
 };
 
 const CheckboxIcon = () => (
@@ -18,8 +20,8 @@ const CheckboxIcon = () => (
   </svg>
 );
 
-export function Checkbox({ children, onChange }: CheckboxProps) {
-  const [checked, setChecked] = useState(false);
+export function Checkbox({ children, onChange, isChecked}: CheckboxProps) {
+  const [checked, setChecked] = useState(isChecked || false);
   const className = classNames({
     checkbox: true,
     checkbox_checked: checked,

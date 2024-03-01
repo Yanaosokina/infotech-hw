@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+.filter__option:hover {
+  background-color: #ffd8bf;
+}
+
 .filter__option_selected {
   background-color: #ffd8bf;
 }

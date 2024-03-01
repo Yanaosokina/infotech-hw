@@ -15,10 +15,16 @@
   color: white;
   font-weight: 700;
   font-size: 30px;
+  &:hover {
+    color: white;
+  }
 }
 
 .footer a {
   color: white;
+  &:hover {
+    color: cornflowerblue;
+  }
 }
 
 @media (max-width: 1000px) {

@@ -1,0 +1,39 @@
+.product__details {
+  width: 100%;
+}
+
+.product__details_editable .product__detail {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.product__sku {
+  display: flex;
+  gap: 10px;
+}
+.product__sku p {
+  color: #b2b5bb;
+}
+
+.product__sku p:last-child {
+  color: #444B58;
+}
+
+.product__details_editable .product__detail p {
+  width: 230px;
+}
+
+.product__details_editable .product__detail_children {
+  width: 100%;
+}
+
+.product__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.product__button {
+  width: 300px;
+}

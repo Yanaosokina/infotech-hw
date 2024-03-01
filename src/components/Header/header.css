@@ -24,9 +24,12 @@
   opacity: 0.5;
 }
 
-.header__block .header__logo {
+.header__logo {
   font-weight: 700;
   font-size: 30px;
+  &:hover {
+    color: white;
+  }
 }
 
 @media (max-width: 1230px) {

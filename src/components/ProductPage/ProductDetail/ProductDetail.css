@@ -1,0 +1,46 @@
+.product__detail {
+  margin-bottom: 23px;
+  display: flex;
+  gap: 10px;
+}
+
+.product__detail.product__detail_editable {
+  display: flex;
+  align-items: center;
+  gap: 0;
+
+  p {
+    width: 230px;
+  }
+
+  .product__detail_children {
+    width: 100%;
+  }
+}
+
+.product__detail_children {
+
+  font-weight: 600;
+}
+
+.product__detail_label {
+  color: #b2b5bb;
+}
+
+.product__detail_value {
+  color: #444b58;
+  font-weight: 600;
+}
+
+/* toDOD  */
+.product__detail_input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #f6f6f6;
+  border-radius: 4px;
+  color: #b2b5bb;
+  font-size: 16px;
+  line-height: 140%;
+  padding-left: 17px;
+}

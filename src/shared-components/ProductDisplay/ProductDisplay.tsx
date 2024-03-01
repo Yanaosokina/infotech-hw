@@ -14,7 +14,6 @@ export function ProductDisplay({
   onShowMore,
   isStaffPage,
 }: ProductDisplayProps) {
-
   return (
     <div className="catalog__cards">
       <Cards products={products} isStaffPage={isStaffPage} />

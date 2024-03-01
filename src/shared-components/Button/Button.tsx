@@ -6,11 +6,13 @@ type ButtonProps = {
   type?: "primary" | "secondary" | "text" | "tertiary";
   className?: string;
   onClick: () => void;
+  isLoading?: boolean;
 };
 
 export function Button({
   text,
   type,
+  isLoading,
   className: propClassName = "",
   onClick,
 }: ButtonProps) {
@@ -24,7 +26,12 @@ export function Button({
   });
 
   return (
-    <button onClick={onClick} className={className} aria-label={text}>
+    <button
+      onClick={onClick}
+      className={className}
+      aria-label={text}
+      disabled={isLoading}
+    >
       {text}
     </button>
   );

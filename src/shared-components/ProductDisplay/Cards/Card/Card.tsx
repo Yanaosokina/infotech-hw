@@ -1,3 +1,4 @@
+import { ProductDescription } from 'shared-components/ProductDescription';
 import './Card.css';
 
 type CardProps = {
@@ -14,8 +15,7 @@ export function Card({ image, modelName, price }: CardProps) {
         <img src={image} alt={modelName} className="card__image" />
       </picture>
       <div className="card__details">
-        <p className="card__modelName">{modelName}</p>
-        <p className="card__price">{price} <span className="card__price_dollar">$</span></p>
+        <ProductDescription title={modelName} price={price}  />
       </div>
     </div>
   );

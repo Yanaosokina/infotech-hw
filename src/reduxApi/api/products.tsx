@@ -23,17 +23,27 @@ export type ProductsResponse = {
 
 export type Category = string;
 
-type ProductsQueryPayload = {
-  skip?: number;
-  limit?: number;
-  category: string;
-};
+  type ProductsQueryPayload = {
+    skip?: number;
+    limit?: number;
+    category: string;
+  };
 
 type ProductsSearchQueryPayload = {
   skip?: number;
   limit?: number;
   searchTerm: string;
 };
+ export type UpdateProductRequest = {
+  id: number;
+  price: number;
+  discountPercentage: number;
+  stock: number;
+  brand: string;
+  category: string;
+  description: string;
+};
+
 
 export const productsApi = createApi({
   reducerPath: "productsApi",
@@ -64,7 +74,7 @@ export const productsApi = createApi({
         };
       },
       forceRefetch({ currentArg, previousArg }) {
-        return currentArg !== previousArg;
+        return JSON.stringify(currentArg) !== JSON.stringify(previousArg);
       },
     }),
     searchProducts: builder.query<ProductsResponse, ProductsSearchQueryPayload>(
@@ -88,7 +98,6 @@ export const productsApi = createApi({
           };
         },
         forceRefetch({ currentArg, previousArg }) {
-          console.log('force refetch ', currentArg !== previousArg, currentArg, previousArg);
           return currentArg !== previousArg;
         },
       }
@@ -96,14 +105,36 @@ export const productsApi = createApi({
     getProductById: builder.query<Product, number>({
       query: (id) => `/products/${id}`,
     }),
+    updateProduct: builder.mutation<Product, UpdateProductRequest>({
+      query: ({ id, price, discountPercentage, stock, brand, category, description }) => {
+        return {
+          url: `/products/${id}`,
+          method: 'PUT',
+          body: { price, discountPercentage, stock, brand, category, description }, 
+        }
+      },
+      async onQueryStarted({ id, ...patch }, { dispatch, queryFulfilled }) {
+      
+        try {
+          const { data } = await queryFulfilled;
+          dispatch(
+            productsApi.util.updateQueryData('getProductById', id, (draft) => {
+              Object.assign(draft, data);
+            })
+          )
+        } catch {}
+      },
+    })
   }),
 });
 
 export const {
   useGetCategoriesQuery,
   useGetProductsByCategoryQuery,
+  useLazyGetProductsByCategoryQuery,
   useSearchProductsQuery,
   useGetProductByIdQuery,
+  useUpdateProductMutation,
   reducer,
   middleware,
 } = productsApi;

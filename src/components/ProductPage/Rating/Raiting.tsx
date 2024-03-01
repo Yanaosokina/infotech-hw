@@ -1,4 +1,4 @@
-import "./Rating.css";
+import "./Raiting.css";
 
 export function Raiting({ rating }: { rating: number }) {
   const ratingRound = Math.round(rating * 2) / 2;
